@@ -11,7 +11,7 @@
                 <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномарт логотип">
             </a>
 
-            <form action="" method="get" class="search">
+            <form action="https://echo.htmlacademy.ru" method="get" class="search">
                 <label><input type="search" name="search" placeholder="Поиск:"></label>
             </form>
             
@@ -78,7 +78,7 @@
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
-                        <img src="img/icon-home.svg" width="15" height="12" alt="home">
+                        <img src="img/icon-home.svg" width="15" height="12" alt="Значок домик">
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -94,43 +94,58 @@
 
             <section class="filters">
                 <h2 class="filters-title">Фильтр:</h2>
-                <!---форма--->
-                
-                <h3 class="filters-producers">Производители</h3>
-                    <ul class="filters-producers-list">
-                        <li class="filters-producers-item">
-                            <img class="filters-producers-img" src="img/checkbox-on.svg"width="27" height="23" alt="checkbox-on">
-                            bosch
-                        </li>
-                        <li class="filters-producers-item">
-                            <img class="filters-producers-img" src="img/checkbox-off.svg"width="23" height="23" alt="checkbox-on">
-                            интерскол
-                        </li>
-                        <li class="filters-producers-item">
-                            <img class="filters-producers-img" src="img/checkbox-on.svg"width="27" height="23" alt="checkbox-on">
-                            makita
-                        </li>
-                        <li class="filters-producers-item">
-                            <img class="filters-producers-img" src="img/checkbox-off.svg" width="23" height="23" alt="checkbox-on">
-                            dewalt      
-                        </li>
-                        <li class="filters-producers-item">
-                            <img class="filters-producers-img" src="img/checkbox-off.svg" width="23" height="23" alt="checkbox-on">
-                            hitachi
-                        </li>
-                    </ul>
-                <h3 class="filters-type">Питание</h3>
-                <ul class="filters-type-list">
-                    <li class="filters-type-item">
-                       <img src="img/radio-on.svg" width="25" height="25" alt="radio-on">
-                        аккумуляторные
-                    </li>
-                    <li class="filters-type-item">
-                       <img src="img/radio-off.svg" width="25" height="25" alt="radio-off">
-                        сетевые
-                    </li>
-                </ul>
-                <button class="filters-button">показать</button>    
+                <form class="filters-form" action="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Цена:</legend>
+                        <p class="filters-range-form">
+                            <input type="range" min="0" max="30000">
+                            <output name="filter-range-price"></output>
+                        </p>
+                        <p class="filters-range">
+                            <span class="filters-range-min">0</span>
+                            <span class="filters-range-max">30000</span>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Производители:</legend>
+                            <ul class="filters-producers-list">
+                                <li class="filters-producers-item filters-option">
+                                    <input class="filters-input filters-input-checkbox" type="checkbox" name="bosch" id="filters-bosch" checked>
+                                    <label for="filters-bosch">bosch</label>
+                                </li>
+                                <li class="filters-producers-item filters-option">
+                                    <input class="filters-input filters-input-checkbox" type="checkbox" name="interskol" id="filters-interskol">
+                                    <label for="filters-interskol">интерскол</label>    
+                                </li>
+                                <li class="filters-producers-item filters-option">
+                                    <input class="filters-input filters-input-checkbox" type="checkbox" name="makita" id="filters-makita" checked>
+                                    <label for="filters-makita">makita</label>    
+                                </li>
+                                <li class="filters-producers-item filters-option">
+                                    <input class="filters-input filters-input-checkbox" type="checkbox" name="dewalt" id="filters-dewalt">
+                                    <label for="filters-dewalt">dewalt</label>         
+                                </li>
+                                <li class="filters-producers-item filters-option">
+                                    <input class="filters-input filters-input-checkbox" type="checkbox" name="hitachi" id="filters-hitachi">
+                                    <label for="filters-hitachi">hitachi</label>
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Питание:</legend>
+                        <ul class="filters-type-list">
+                            <li class="filters-type-item">
+                                <input class="filters-input filters-input-radio" type="radio" name="product-type" value="battery" id="battery-type" checked>
+                                <label for="battery-type">аккумуляторные</label>  
+                            </li>
+                            <li class="filters-type-item">
+                                <input class="filters-input filters-input-radio" type="radio" name="product-type" value="network" id="network-type">
+                                <label for="network-type">сетевые</label>  
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="filters-button" type="submit">показать</button> 
+                </form>
             </section>
 
             <section class="catalog">
@@ -430,13 +445,14 @@
         </div><!---footer-bottom--->   
     </footer>
     
-    <div class="modal modal-cart">
-        <p class="modal-cart-desc"></p>Товар добавлен в корзину
-        <button class="modal-cart-checkout button">Оформить заказ (кнопка)</button>
-        <button class="modal-cart-continue">Продолжить покупки (кнопка)</button>
-        <span class="modal-cart-sign">(значок)</span>
-        <span class="modal-close">х</span>
-    </div>
+    <section class="modal modal-cart">
+        <h2 class="visually-hidden">Окно подтверждения добавления товара в корзину</h2>
+        <img class="modal-cart-sign" src="img/icon-mark.svg" alt="Значок добавления товара в корзину">
+        <p class="modal-cart-desc">Товар добавлен в корзину</p>
+        <a class="modal-cart-checkout button" href="#">Оформить заказ</a>
+        <a class="modal-cart-continue button" href="#">Продолжить покупки</a>
+        <button class="modal-close" type="button" value="#">Закрыть форму</button>
+    </section>
     
 </body>
 </html>
