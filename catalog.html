@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Перфораторы</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -38,9 +40,9 @@
             <address class="header-address">г.Санкт-Петербург, ул.Конюшенная, д.19/8</address>
             
             <div class="header-user-login">
-                <div class="header-user-name">    
+                <span class="header-user-name">    
                     Равшан Джамшутович   
-                </div>
+                </span>
                 <div class="header-user-login-menu">
                     <a class="login-menu-myorders" href="#">Мои заказы</a>
                     <a href="login-menu-mycabinet">Личный кабинет</a>
@@ -73,7 +75,7 @@
         </div><!---container--->
     </header>
 
-    <main class="main">
+    <main class="main page-main">
         <div class="container">    
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
@@ -152,11 +154,11 @@
                 <h2 class="visually-hidden">Каталог перфораторов</h2>
                 <div class="catalog-sorter">
                     <span>сортировка:</span>
-                    <ul class="catalog-sorter-list">
-                         <li class="catalog-sorter-item">по цене</li>
-                         <li class="catalog-sorter-item">по типу</li>
-                         <li class="catalog-sorter-item">по функционалу</li>
-                     </ul>
+                    <div class="catalog-sorter">
+                         <a class="catalog-sorter-link active-sorter" href="#">по цене</a>
+                         <a class="catalog-sorter-link inactive-sorter" href="#">по типу</a>
+                         <a class="catalog-sorter-link inactive-sorter" href="#">по функционалу</a>
+                     </div>
                      <span class="visually-hidden"></span>
                      <span class="visually-hidden"></span>
                 </div>
@@ -181,10 +183,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item">
                         <a class="catalog-item-link" href="#">
@@ -205,10 +203,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item catalog-item-new">
                         <a class="catalog-item-link" href="#">
@@ -228,10 +222,6 @@
                                 <span class="catalog-new-price">12 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item">
                         <a class="catalog-item-link" href="#">
@@ -252,10 +242,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item catalog-item-new">
                         <a class="catalog-item-link" href="#">
@@ -275,10 +261,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item">
                         <a class="catalog-item-link" href="#">
@@ -299,10 +281,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item catalog-item-new">
                         <a class="catalog-item-link" href="#">
@@ -323,10 +301,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item">
                         <a class="catalog-item-link" href="#">
@@ -347,10 +321,6 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                     <li class="catalog-item">
                         <a class="catalog-item-link" href="#">
@@ -371,19 +341,16 @@
                                 <span class="catalog-new-price">15 500 p.</span>
                             </p>
                         </a>
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action" href="#">Купить</a>
-                            <a class="catalog-item-action" href="#">В закладки</a>
-                        </div>
                     </li>
                 </ul>
             </section>
 
-            <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">Следующая</a></li>
-            </ul>
+            <div class="pagination">
+                <a class="pagination-link pagination-active">1</a>
+                <a class="pagination-link pagination-inactive" href="#">2</a>
+                <a class="pagination-link pagination-inactive" href="#">3</a>
+                <a class="pagination-link pagination-inactive" href="#">Следующая</a>
+            </div>
         </div><!---container--->
          
         <section class="product-about">
@@ -449,8 +416,10 @@
         <h2 class="visually-hidden">Окно подтверждения добавления товара в корзину</h2>
         <img class="modal-cart-sign" src="img/icon-mark.svg" alt="Значок добавления товара в корзину">
         <p class="modal-cart-desc">Товар добавлен в корзину</p>
-        <a class="modal-cart-checkout button" href="#">Оформить заказ</a>
-        <a class="modal-cart-continue button" href="#">Продолжить покупки</a>
+        <div class="modal-cart-buttons">
+            <a class="modal-cart-checkout button" href="#">Оформить заказ</a>
+            <a class="modal-cart-continue button" href="#">Продолжить покупки</a>
+        </div>
         <button class="modal-close" type="button" value="#">Закрыть форму</button>
     </section>
     
