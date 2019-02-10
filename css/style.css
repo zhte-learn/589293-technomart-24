@@ -24,14 +24,27 @@ a {
   border: none;
 }
 
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-top .container{
+    display: flex;
+    min-height: 42px;
+}
+
 .header-top{
     background-color: #293449;
 }
 
 .main-header-logo img{
+/*    padding: 15px 55px;*/
+    
     background-color: #ee3643;
     
-    border-bottom: 4px solid #b52933;
+    border-bottom: 5px solid #b52933;
 }
 
 .main-header-logo img:hover,
@@ -44,6 +57,8 @@ a {
 }
 
 .header-top input[type="search"]{
+    width: 260px;
+    
     font: inherit;
     
     background-color: #293449;
@@ -53,6 +68,8 @@ a {
 
 .header-cartmarker,
 .header-cart{
+    width: 150px;
+    
     font-size: 17px;
     font-weight: 400;
     line-height: 18px;
@@ -65,6 +82,8 @@ a {
 }
 
 .header-checkout{
+    width: 150px;
+    
     font-size: 17px;
     font-weight: 400;
     line-height: 18px;
@@ -90,12 +109,25 @@ a {
     background-image: url(..//img/top%20background.jpg);
 }
 
+.header-middle{
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-title{
+    width: 300px;
+    
+    margin: 0;
+    
     font-size: 16px;
     font-style: italic;
     font-weight: normal;
     line-height: 23px;
     color: #ee3643;
+}
+
+.header-contacts{
+    width: 300px;
 }
 
 .header-phone{
@@ -113,6 +145,10 @@ a {
     line-height: 24px;
     font-style: normal;
     color: #32425c;
+}
+
+.header-user-menu{
+    width: 300px;
 }
 
 .header-user-menu a{
@@ -135,14 +171,19 @@ a {
 
 .header-menu-list{
     list-style: none;
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu-item{
+    background-color: #32425c;
     border-bottom: 4px solid #293449;    
 }
 
 .header-menu-link{
     color: #fff;
-    
-    background-color: #32425c;
 }
 
 .header-menu-link:hover,
@@ -385,6 +426,8 @@ dc91d8 техника
 }
 
 .services-slider-desc{
+    margin: 0;
+    
     font-family: 'PT Sans', sans-serif;
     color: #000000;
     font-size: 13px;
@@ -392,8 +435,26 @@ dc91d8 техника
     line-height: 24px;   
 }
 
+.about-contacts-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.about{
+    width: 540px;
+}
+
+.contacts{
+    width: 300px;
+}
+
 .about-title,
 .contacts-title{
+    margin: 0;
+    
     color: #000000;
     font-size: 30px;
     font-weight: 400;
@@ -430,13 +491,38 @@ dc91d8 техника
 }
 
 .footer-top{
+    padding-bottom: 50px;
+    
     background-color: #32425c;   
 }
 
+.footer-wrapper-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
 .footer-logo img{
+    padding: 21px 40px;
+    
     background-color: #ee3643;
     
-    border-bottom: 4px solid #b52933;
+    border-bottom: 5px solid #b52933;
+}
+
+.footer-menu{
+    list-style: none;
+    
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 37px;
+    padding: 0;
+}
+
+.footer-wrapper-middle{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-contact{
@@ -447,12 +533,18 @@ dc91d8 техника
     line-height: 24px;
 }
 
-.footer-menu,
 .footer-offers{
-    list-style: none;  
+    list-style: none;
+    
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-menu a{
+    margin-left: 60px;
+    
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -460,6 +552,8 @@ dc91d8 техника
 }
 
 .footer-offers a{
+    margin-left: 60px;
+    
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -485,7 +579,28 @@ dc91d8 техника
     background-color: #293449; 
 }
 
+.footer-bottom .container{
+    display: flex;
+/*    justify-content: space-between;*/
+    padding-top: 37px;
+    padding-bottom: 34px;
+}
+
+.footer-bottom p{
+    margin: 0;
+}
+
+.footer-bottom .social-list{
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+}
+
 .footer-copyright{
+    width: 230px;
+    
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -493,7 +608,9 @@ dc91d8 техника
 }
 
 .social-list{
-    list-style: none;    
+    list-style: none;
+    
+    width: 150px;
 }
 
 .social-list-item img{
@@ -507,6 +624,8 @@ dc91d8 техника
 
 .footer-email,
 .footer-developer{
+    width: 140px;
+    
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
