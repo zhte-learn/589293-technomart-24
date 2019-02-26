@@ -119,10 +119,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="range-windows">
-                                <span class="window-range-min">0</span>
+                            <div class="input-numbers">
+                                <input type="text" name="min-number" value="0" >    
                                 <div class="short-line"></div>
-                                <span class="window-range-max">30000</span>
+                                <input type="text" name="max-number" value="30000"> 
                             </div>
                         </fieldset>
                         <fieldset>
@@ -133,7 +133,7 @@
                                         <label for="filters-bosch">bosch</label>
                                     </li>
                                     <li class="filters-producers-item">
-                                        <input class="visually-hidden" type="checkbox" name="interskol" id="filters-interskol">
+                                        <input class="visually-hidden" type="checkbox" name="interskol" id="filters-interskol" disabled>
                                         <label for="filters-interskol">интерскол</label>    
                                     </li>
                                     <li class="filters-producers-item">
@@ -174,7 +174,7 @@
                         <a class="catalog-sorter-link active-sorter" href="#">по цене</a>
                         <a class="catalog-sorter-link inactive-sorter" href="#">по типу</a>
                         <a class="catalog-sorter-link inactive-sorter" href="#">по функционалу</a>
-                        <button class="triangle-up" type="button">
+                        <button class="triangle-up triangle-up-active" type="button">
                             <span class="visually-hidden">Сортировать по возрастанию</span>
                         </button>
                         <button class="triangle-down" type="button">

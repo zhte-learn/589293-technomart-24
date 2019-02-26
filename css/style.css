@@ -554,8 +554,32 @@ img {
     cursor: pointer;
 }
 
+.slider-bottom{
+    display: flex;
+    align-items: center;
+}
+
 .slider-link{
+    display: block;
     width: 195px;
+    margin-right: 75px;
+}
+
+.slider-bullets{
+    display: flex;
+}
+
+.bullet-item{
+    width: 10px;
+	height: 10px;
+    margin-right: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.activ-bullet{
+    background-color: #ee3643;
 }
 
 .popular-title-wrap{
@@ -633,7 +657,7 @@ img {
     width: 218px;
     height: 140px;
     padding: 40px 0;
-    background-color: rgba(255,255,255,0.9);
+    background-color: #fff;
     z-index: 10;
 }
 
@@ -870,7 +894,8 @@ img {
 
 .services-slider-button:hover,
 .services-slider-button:focus {
-  background-color: #293449;
+    color: #fff;
+    background-color: #293449;
 }
 
 .services-slider-list{
@@ -1470,25 +1495,22 @@ img {
   left: 145px;
 }
 
-.range-windows{
+.input-numbers{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 26px;
 }
 
-.range-windows span{
+.input-numbers input[type="text"]{
     width: 95px;
-    padding: 7px 0;
+    height: 38px;
     text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #f7f3ec;
+    border: 0;
     border-radius: 2px;
-}
-
-.window-range-min,
-.window-range-max {
-  font-size: 17px;
-  font-weight: 400;
-  background-color: #f7f3ec;
 }
 
 .short-line{
@@ -1570,6 +1592,14 @@ img {
 }
 /*подмена чекбокса-конец*/
 
+
+/*добавить картинку другого цвета*/
+/*
+input[type="checkbox"]:disabled+label::before{
+   
+}
+*/
+
 .catalog{
     width: 700px;
 }
@@ -1632,16 +1662,12 @@ img {
     position: absolute;
     content: '';
     top: 0;
-    left: 0;
+    left: 40px;
     width: 0;
 	height: 0;
-/*
-    margin-left: 45px;
-    margin-right: 20px;
-*/
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-bottom: 10px solid #ee3643;
+    border-bottom: 10px solid #c5c5c5;
 }
 
 .triangle-down::after{
@@ -1655,6 +1681,21 @@ img {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 10px solid #c5c5c5;
+}
+
+.triangle-up:hover::after{
+    border-bottom: 10px solid #231f20;    
+}
+.triangle-down:hover::after{
+    border-top: 10px solid #231f20;    
+}
+
+.triangle-up-active::after{
+    border-bottom: 10px solid #ee3643;   
+}
+
+.triangle-down-active::after{
+    border-top: 10px solid #ee3643;   
 }
 
 .pagination{
