@@ -14,7 +14,7 @@
         <div class="header-top">
             <div class="container">
                 <a class="main-header-logo">
-                    <img src="img/logo_header.png" width="110" height="18" alt="Логотип Техномарт">
+                    <img src="img/logo_header.svg" width="111" height="18" alt="Логотип Техномарт">
                 </a>
 
                 <form class="search" method="get">
@@ -91,6 +91,7 @@
                 <h2 class="visually-hidden">Предложения</h2>
                 <div class="offers-row">
                     <div class="offers-item materials">
+                        <div class="flag flag-new">новинка</div>
                         <h3 class="offers-item-title">Материалы</h3>
                         <a class="offers-item-link" href="#">На любой вкус</a>
                     </div>
@@ -105,7 +106,8 @@
                 </div>
                 
                 <div class="offers-row">
-                    <div class="slider-item">
+                    <div class="slider-wrapper">
+                        <div class="slider-item slider-active">
                         <h4 class="slider-title">Дрели</h4>
                         <p class="slider-desc">Соседям на радость!</p>
                         <div class="slider-nav">
@@ -121,7 +123,7 @@
                         </div>
                            
                     </div>
-                    <div class="slider-item hidden">
+                        <div class="slider-item">
                         <div class="slider-content">
                             <h4 class="slider-title">Перфораторы</h4>
                             <p class="slider-desc">Настоящие мужские игрушки</p>
@@ -132,7 +134,7 @@
                             <a class="slider-link button" href="#">Открыть каталог</a>
                         </div>   
                     </div>
-        
+                    </div>
                     <div class="offers-block">
                         <div class="offers-item discount">
                             <h3 class="offers-item-title">Скидки 50%</h3>
@@ -159,7 +161,7 @@
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
 
-                        <img width="218" height="170" src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000">
+                        <img width="218" height="170" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000">
 
                         <h3 class="catalog-item-title">
                             Перфоратор&nbsp;BOSCH BFG&nbsp;9000
@@ -175,7 +177,7 @@
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
 
-                        <img width="218" height="170" src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000">
+                        <img width="218" height="170" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000">
 
                         <h3 class="catalog-item-title">
                             Перфоратор&nbsp;BOSCH BFG&nbsp;3000
@@ -191,7 +193,7 @@
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
 
-                        <img width="218" height="170" src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000">
+                        <img width="218" height="170" src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000">
 
                         <h3 class="catalog-item-title">
                             Перфоратор&nbsp;BOSCH BFG&nbsp;6000
@@ -208,7 +210,7 @@
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
                     
-                        <img width="218" height="170" src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 2000">
+                        <img width="218" height="170" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 2000">
                     
                         <h3 class="catalog-item-title">
                             Перфоратор&nbsp;BOSCH BFG&nbsp;2000
@@ -253,12 +255,12 @@
                     </li>
                     <li class="producers-item">
                         <a href="#">
-                            <img class="producers-logo" src="img/LG.jpg" width="121" height="73" alt="Логотип LG">
+                            <img class="producers-logo" src="img/lg.jpg" width="121" height="73" alt="Логотип LG">
                         </a>
                     </li>
                     <li class="producers-item">
                         <a href="#">
-                            <img class="producers-logo" src="img/AEG.jpg" width="151" height="96" alt="Логотип AEG">
+                            <img class="producers-logo" src="img/aeg.jpg" width="151" height="96" alt="Логотип AEG">
                         </a>
                     </li>
                     <li class="producers-item">
@@ -278,9 +280,9 @@
 
                 <div class="services-slider-wrap">
                     <div class="services-slider-nav">
-                        <button class="services-slider-button active" type="button">Доставка</button>
-                        <button class="services-slider-button" type="button">Гарантия</button>
-                        <button class="services-slider-button" type="button">Кредит</button>
+                        <button class="services-slider-button button-delivery services-button-active" type="button">Доставка</button>
+                        <button class="services-slider-button button-guarantee" type="button">Гарантия</button>
+                        <button class="services-slider-button button-credit" type="button">Кредит</button>
                     </div>
                 
                     <div class="services-slider slider-delivery">
@@ -288,12 +290,12 @@
                         <p class="services-slider-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
                         <p class="services-slider-desc">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                     </div>
-                    <div class="services-slider slider-guarantee hidden">
+                    <div class="services-slider slider-guarantee">
                         <h3 class="services-slider-title">Гарантия</h3>
                         <p class="services-slider-desc">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
                         <p class="services-slider-desc">Дом уж восстановите как-нибудь сами.</p>
                     </div>
-                    <div class="services-slider slider-credit hidden">
+                    <div class="services-slider slider-credit">
                     <h3 class="services-slider-title">Кредит</h3>
                     <p class="services-slider-desc">Залезть в долговую яму стало проще!</p>
                     <p class="services-slider-desc">Кредитные консультанты придут вам на помощь!</p>
@@ -334,7 +336,7 @@
             <h2 class="contacts-title">Контакты</h2>
             <p class="contacts-desc">Вы можете забрать товар сами, заехав в наш офис:</p>
             <figure class="contacts-map">
-                <a href="#">
+                <a class="button-map" href="#">
                    <img src="img/map_mini.jpg" width="300" height="158" alt="map">
                 </a>
             </figure>
@@ -393,7 +395,7 @@
 
     <div class="footer-bottom">
         <div class="container">
-            <p class="footer-copyright">&copy; 2010-2019 Компания&nbsp;&#171;Техномарт&#187;<br>Все права защищены.</p>
+            <p class="footer-copyright">&copy; 2010-2019 Компания&nbsp;&#171;Техномарт&#187; Все права защищены.</p>
 
             <ul class="social-list">
                 <li class="social-list-item vkontakte">
@@ -426,17 +428,18 @@
     </div>
 </footer>
 
-<section class="modal modal-feedback hidden">     
+<section class="modal modal-feedback hidden">
+    <h2 class="visually-hidden">Связаться с нами</h2>     
     <form class="feedback" method="post">
         <div class="modal-top">  
             <p class="feedback-name">
-                <label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+                <label>Ваше имя:<input type="text" name="yourname" placeholder="Имя Фамилия"></label>
             </p>
             <p class="feedback-email">
                 <label>Ваш e-mail:<input type="email" name="email" placeholder="email@example.com"></label>
             </p>
             <p class="feedback-text">
-                <label>Текст письма: <textarea name="text" placeholder="В свободной форме"></textarea></label>
+                <label>Текст письма: <textarea name="message" placeholder="В свободной форме"></textarea></label>
             </p>
         </div>
         <div class="modal-bottom">
@@ -447,9 +450,137 @@
 </section>
   
 <section class="modal modal-map hidden">
-    <h3 class="visually-hidden">Как до нас добраться</h3>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412368!2d30.320894615677183!3d59.938796869048424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sae!4v1551460375244" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     <button class="modal-close" type="button">Закрыть форму</button>
 </section>
+
+<script>
+    var link = document.querySelector(".contacts-link");
+    
+    var popup = document.querySelector(".modal-feedback");
+    var close = popup.querySelector(".modal-close");
+    
+    var form = popup.querySelector("form");
+    var yourname = popup.querySelector("[name=yourname]");
+    var email = popup.querySelector("[name=email]");
+    
+    var isStorageSupport = true;
+    var storage = "";
+  
+    try{
+        storage = localStorage.getItem("yourname");
+        storage = localStorage.getItem("email");
+    } catch (err){
+        isStorageSupport = false;
+        }
+    
+    link.addEventListener("click", function (evt){
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        
+        if (storage){
+            yourname.value = storage;
+            email.focus();   
+        } else{
+            yourname.focus();       
+        }
+    });
+    
+    close.addEventListener("click", function (evt){
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+    });
+    
+    form.addEventListener("submit", function (evt){
+        if (!yourname.value || !email.value){
+            evt.preventDefault();
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
+        } else{
+            if (isStorageSupport) {
+                localStorage.setItem("yourname", yourname.value);
+                localStorage.setItem("email", email.value);
+            }
+        }
+    });
+    
+    window.addEventListener("keydown", function (evt){
+        if (evt.keyCode === 27){
+            evt.preventDefault();
+            if (popup.classList.contains("modal-show")){
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+            }
+        }
+    });
+    
+    
+    var mapLink = document.querySelector(".button-map");
+
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = mapPopup.querySelector(".modal-close");
+    
+    mapLink.addEventListener("click", function (evt){
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+    });
+
+    mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function (evt) {
+        evt.preventDefault();
+        if (evt.keyCode === 27) {
+            if (mapPopup.classList.contains("modal-show")) {
+                mapPopup.classList.remove("modal-show");
+            }
+        }
+    });
+    
+
+    var sliderBtnsRight = document.querySelectorAll(".slider-right");
+    var slider = document.querySelectorAll(".slider-item");
+    
+    for(var j = 0; j < sliderBtnsRight.length; j++)
+    {
+        sliderBtnsRight[j].addEventListener("click", function (evt){
+            for(var i = 0; i < slider.length; i++){
+                if (slider[i].classList.contains("slider-active")){
+                    slider[i].classList.remove("slider-active");
+                    if (i < slider.length - 1){
+                        slider[i + 1].classList.add("slider-active");
+                    } else{
+                        slider[0].classList.add("slider-active");
+                    } break;
+                }
+            }
+        })
+    }
+    
+    var sliderBtnsLeft = document.querySelectorAll(".slider-left");
+    
+    for(var j = 0; j < sliderBtnsLeft.length; j++)
+    {
+        sliderBtnsLeft[j].addEventListener("click", function (evt){
+            for(var i = 0; i < slider.length; i++){
+                if (slider[i].classList.contains("slider-active")){
+                    slider[i].classList.remove("slider-active");
+                    if (i == 0){
+                        slider[slider.length - 1].classList.add("slider-active");
+                    } else{
+                        slider[i - 1].classList.add("slider-active");
+                    } break;
+                }
+            }
+        })
+    }
+    
+</script>
 
 </body>
 
