@@ -933,8 +933,7 @@ img{
     border: none;
 }
 
-.services-slider-button:hover,
-.services-slider-button:focus{
+.services-slider-button:hover{
     color: #fff;
     background-color: #293449;
 }
@@ -945,7 +944,12 @@ img{
 }
 
 .services-slider{
+    display: none;
     min-width: 620px;
+}
+
+.services-slider-active{
+    display: block;
 }
 
 .services-slider-title{
@@ -973,14 +977,12 @@ img{
 }
 
 .slider-guarantee{
-    display: none;
     background-image: url(../img/service_guarantee.png);
     background-repeat: no-repeat;
     background-position: 100% 0;    
 }
 
 .slider-credit{
-    display: none;
     background-image: url(../img/service_credit.png);
     background-repeat: no-repeat;
     background-position: 100% 0;    
@@ -2025,6 +2027,7 @@ p.feedback-text{
     width: 620px;
     margin-left: -310px;
     border-top: 5px solid #ee3643;
+    z-index: 999;
 }
 
 .modal-cart .modal-top{
