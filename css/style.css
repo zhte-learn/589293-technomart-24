@@ -2021,6 +2021,12 @@ p.feedback-text{
     margin-left: -470px;
 }
 
+iframe{
+    max-width: 940px;
+    height: 450px;
+    border: none;
+}
+
 .modal-cart{
     top: 120px;
     left: 50%;
