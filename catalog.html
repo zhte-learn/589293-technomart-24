@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext"
         rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -34,9 +34,9 @@
             </div>
         </div>
 
-        <div class="header-bottom">
-            <div class="container">
-                <h1 class="header-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+        <div class="container">
+            <div class="header-middle">
+                <p class="header-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
 
                 <div class="header-contacts">
                     <a class="header-phone" href="tel:+78125550555">
@@ -47,19 +47,22 @@
                     </address>
                 </div>
 
-                <div class="header-login">
+                <div class="header-user-menu">
                     <div class="login-personal">
-                        <a class="login-name" href="#">   
+                        <a class="login-name" href="#">
+                            <span class="visually-hidden">имя пользователя</span>   
                             Равшан Джамшутович
                         </a>
-                        <a class="logout" href="#"></a>
+                        <a class="logout" href="#">
+                            <span class="visually-hidden">ссылка на выход из личного кабинета</span>
+                        </a>
                     </div>
                     <div class="login-menu">
                         <a class="login-myorders" href="#">Мои заказы</a>
-                        <span class="spot"></span>
-                        <a href="login-mycabinet">Личный кабинет</a>
+                        <a class="login-mycabinet" href="#">Личный кабинет</a>
                     </div>
                 </div>
+            </div>
                 
                 <ul class="header-nav-list">
                     <li class="header-nav-item">
@@ -85,15 +88,14 @@
                     </li>
                 </ul>
             </div>
-        </div>
     </header>
 
     <main class="main catalog-page">
         <div class="container">    
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">
-                        <img src="img/icon-home.svg" width="15" height="12" alt="Значок домик">
+                    <a class="breadcrumbs-link breadcrumb-home" href="index.html">
+                        <span class="visually-hidden">ссылка на главную страницу</span>
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -122,9 +124,11 @@
                                 </div>
                             </div>
                             <div class="input-numbers">
-                                <input type="text" name="min-number" value="0" >    
-                                <div class="short-line"></div>
-                                <input type="text" name="max-number" value="30000"> 
+                                <label class="visually-hidden" for="min-price">минимальная цена товара</label>
+                                <input type="text" id="min-price" name="min-number" value="0" >    
+                                <span class="short-line"></span>
+                                <label class="visually-hidden" for="max-price">максимальная цена товара</label>
+                                <input type="text" id="max-price" name="max-number" value="30000"> 
                             </div>
                         </fieldset>
                         <fieldset>
@@ -135,7 +139,7 @@
                                         <label for="filters-bosch">bosch</label>
                                     </li>
                                     <li class="filters-producers-item">
-                                        <input class="visually-hidden" type="checkbox" name="interskol" id="filters-interskol" disabled>
+                                        <input class="visually-hidden" type="checkbox" name="interskol" id="filters-interskol">
                                         <label for="filters-interskol">интерскол</label>    
                                     </li>
                                     <li class="filters-producers-item">
@@ -160,7 +164,7 @@
                                     <label for="battery-type">аккумуляторные</label>  
                                 </li>
                                 <li class="filters-type-item">
-                                    <input class="visually-hidden" type="radio" name="product-type" value="network" id="network-type" disabled>
+                                    <input class="visually-hidden" type="radio" name="product-type" value="network" id="network-type">
                                     <label for="network-type">сетевые</label>  
                                 </li>
                             </ul>
@@ -176,11 +180,13 @@
                         <a class="catalog-sorter-link active-sorter" href="#">по цене</a>
                         <a class="catalog-sorter-link inactive-sorter" href="#">по типу</a>
                         <a class="catalog-sorter-link inactive-sorter" href="#">по функционалу</a>
-                        <button class="triangle-up triangle-up-active" type="button">
+                        <button class="sort-up" type="button">
                             <span class="visually-hidden">Сортировать по возрастанию</span>
+                            <div class="triangle-up triangle-up-active"></div>
                         </button>
-                        <button class="triangle-down" type="button">
+                        <button class="sort-down" type="button">
                             <span class="visually-hidden">Сортировать по возрастанию</span>
+                            <div class="triangle-down"></div>   
                         </button>
                     </div>
 
@@ -233,7 +239,7 @@
                             <p class="catalog-new-price">12 500 p.</p>
                         </div>
                     </li>
-                    <li class="catalog-item">
+                        <li class="catalog-item">
                             <div class="actions">
                                 <a href="#" class="buy">Купить</a>
                                 <a href="#" class="bookmark">В закладки</a>
@@ -250,6 +256,7 @@
                             </div>
                         </li>
                         <li class="catalog-item">
+                            <div class="flag flag-new">новинка</div>
                             <div class="actions">
                                 <a href="#" class="buy">Купить</a>
                                 <a href="#" class="bookmark">В закладки</a>
@@ -266,7 +273,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                        <div class="flag flag-new">новинка</div>
                         <div class="actions">
                             <a href="#" class="buy">Купить</a>
                             <a href="#" class="bookmark">В закладки</a>
@@ -281,7 +287,8 @@
                             <p class="catalog-new-price">12 500 p.</p>
                         </div>
                     </li>
-                    <li class="catalog-item">
+                        <li class="catalog-item">
+                           <div class="flag flag-new">новинка</div>
                             <div class="actions">
                                 <a href="#" class="buy">Купить</a>
                                 <a href="#" class="bookmark">В закладки</a>
@@ -314,7 +321,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                        <div class="flag flag-new">новинка</div>
                         <div class="actions">
                             <a href="#" class="buy">Купить</a>
                             <a href="#" class="bookmark">В закладки</a>
@@ -344,9 +350,8 @@
         <section class="product-about">
             <div class="container">
                 <h2 class="product-about-title">Пара слов о перфораторах</h2>
-                <p class="product-about-desc">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
-                <p class="product-about-desc">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментом ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-            </div><!---container---> 
+                <p class="product-about-desc">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментом ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            </div>
         </section>   
     </main>
     
@@ -377,7 +382,7 @@
             </div>
             <div class="footer-wrapper-middle">
                 <address class="footer-contact">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7&nbsp;(812)&nbsp;555-05-55
                 </address>
                 <ul class="footer-offers">
@@ -400,21 +405,21 @@
 
     <div class="footer-bottom">
         <div class="container">
-            <p class="footer-copyright">&copy; 2010-2019 Компания&nbsp;&#171;Техномарт&#187;<br>Все права защищены.</p>
+            <p class="footer-copyright">&copy; 2010-2019 Компания&nbsp;&#171;Техномарт&#187; Все права защищены.</p>
 
             <ul class="social-list">
-                <li class="social-list-item vkontakte">
-                    <a class="social-link" href="#">
+                <li class="social-list-item">
+                    <a class="social-link vkontakte" href="#">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </li>
-                <li class="social-list-item facebook">
-                    <a class="social-link" href="#">
+                <li class="social-list-item">
+                    <a class="social-link facebook" href="#">
                         <span class="visually-hidden">Фейсбук</span>
                     </a>
                 </li>
-                <li class="social-list-item instagram">
-                    <a class="social-link" href="#">
+                <li class="social-list-item">
+                    <a class="social-link instagram" href="#">
                         <span class="visually-hidden">Инстаграм</span>
                     </a>
                 </li>
@@ -426,7 +431,7 @@
             </p>
 
             <p class="footer-developer">
-                Разработано -
+                <span>Разработано</span>
                 <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </div>
@@ -448,7 +453,7 @@
         <button class="modal-close" type="button" value="#">Закрыть форму</button>
     </section>
     
-<script src="js/script-catalog.js"></script>
+<script src="js/script-catalog.min.js"></script>
 
 </body>
 </html>

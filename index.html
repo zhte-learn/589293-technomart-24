@@ -6,11 +6,12 @@
     <title>Интернет-магазин "Техномарт"</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
+        <h1 class="visually-hidden">Главная страница интернет-магазина строительных материалов "Техномарт"</h1>
         <div class="header-top">
             <div class="container">
                 <a class="main-header-logo">
@@ -35,11 +36,9 @@
                 <a class="header-checkout" href="#">Оформить заказ</a>
             </div>
         </div>
-
-        <div class="header-bottom">
-            <div class="container">
-                <h1 class="header-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
-
+        <div class="container">
+            <div class="header-middle">
+                <p class="header-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
                 <div class="header-contacts">
                     <a class="header-phone" href="tel:+78125550555">
                         +7&nbsp;(812)&nbsp;555-05-55
@@ -48,7 +47,6 @@
                         г.&nbsp;Санкт-Петербург,&nbsp;ул.&nbsp;Б.&nbsp;Конюшенная,&nbsp;д.&nbsp;19/8
                     </address>
                 </div>
-
                 <div class="header-user-menu">
                     <a class="user-navigation-entrance" href="#">
                         Войти
@@ -56,33 +54,33 @@
                     <a class="user-navigation-registration" href="#">
                         Регистрация
                     </a>
-                </div>
-    
-                <ul class="header-nav-list">
-                    <li class="header-nav-item">
-                        <a class="header-nav-link">Главная</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">Компания</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="header-nav-link" href="catalog.html">Каталог</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">Новости</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">Спецпредложения</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">Доставка</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">Контакты</a>
-                    </li>
-                </ul>
+                </div>    
             </div>
-        </div>
+                
+            <ul class="header-nav-list">
+                <li class="header-nav-item">
+                    <a class="header-nav-link">Главная</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="#">Компания</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="#">Новости</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="#">Спецпредложения</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="#">Доставка</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>   
     </header>
 
     <main>
@@ -107,33 +105,24 @@
                 
                 <div class="offers-row">
                     <div class="slider-wrapper">
-                        <div class="slider-item slider-active">
-                        <h4 class="slider-title">Дрели</h4>
-                        <p class="slider-desc">Соседям на радость!</p>
+                        <div class="slider-item slider-1 slider-active">                     
+                            <h4 class="slider-title">Дрели</h4>
+                            <p class="slider-desc">Соседям на радость!</p>
+                            <a class="slider-link button" href="catalog.html">Открыть каталог</a>
+                        </div>
+                        <div class="slider-item slider-2">
+                            <h4 class="slider-title">Перфораторы</h4>
+                            <p class="slider-desc">Настоящие мужские игрушки</p>
+                            <a class="slider-link button" href="catalog.html">Открыть каталог</a> 
+                        </div>
                         <div class="slider-nav">
                             <button class="slider-left" type="button"><span class="visually-hidden">Назад</span></button>
                             <button class="slider-right" type="button"><span class="visually-hidden">Вперед</span></button>
                         </div>
-                        <div class="slider-bottom">
-                            <a class="slider-link button" href="#">Открыть каталог</a>
-                            <div class="slider-bullets">
-                                <div class="bullet-item"></div>
-                                <div class="bullet-item activ-bullet"></div>
-                            </div>    
-                        </div>
-                           
-                    </div>
-                        <div class="slider-item">
-                        <div class="slider-content">
-                            <h4 class="slider-title">Перфораторы</h4>
-                            <p class="slider-desc">Настоящие мужские игрушки</p>
-                            <div class="slider-nav">
-                                <button class="slider-left" type="button"><span class="visually-hidden">Назад</span></button>
-                                <button class="slider-right" type="button"><span class="visually-hidden">Вперед</span></button>
-                            </div>
-                            <a class="slider-link button" href="#">Открыть каталог</a>
+                        <div class="slider-bullets">
+                            <div class="bullet-item activ-bullet"></div>
+                            <div class="bullet-item"></div>
                         </div>   
-                    </div>
                     </div>
                     <div class="offers-block">
                         <div class="offers-item discount">
@@ -227,48 +216,32 @@
                     <h2 class="popular-title">Популярные производители:</h2>
                     <a class="popular-link button" href="#">Все производители</a>
                 </div>
-                <ul class="producers-list">
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/bosch.jpg" width="126" height="37" alt="Логотип Bosch">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/makita.jpg" width="123" height="40" alt="Логотип Makita">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/dewalt.jpg" width="146" height="44" alt="Логотип Dewalt">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/interskol.png" width="200" height="88" alt="Логотип Интерскол">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/hitachi.jpg" width="169" height="31" alt="Логотип Hitachi">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/lg.jpg" width="121" height="73" alt="Логотип LG">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/aeg.jpg" width="151" height="96" alt="Логотип AEG">
-                        </a>
-                    </li>
-                    <li class="producers-item">
-                        <a href="#">
-                            <img class="producers-logo" src="img/metabo.jpg" width="204" height="69" alt="Логотип Mitabo">
-                        </a>
-                    </li>
-                </ul>
+                <div class="producers-list">    
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/bosch.jpg" width="126" height="37" alt="Логотип Bosch">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/makita.jpg" width="123" height="40" alt="Логотип Makita">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/dewalt.jpg" width="146" height="44" alt="Логотип Dewalt">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/interskol.png" width="200" height="88" alt="Логотип Интерскол">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/hitachi.jpg" width="169" height="31" alt="Логотип Hitachi">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/lg.jpg" width="121" height="73" alt="Логотип LG">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/aeg.jpg" width="151" height="96" alt="Логотип AEG">
+                    </a>
+                    <a class="producers-item" href="#">
+                        <img class="producers-logo" src="img/metabo.jpg" width="204" height="69" alt="Логотип Mitabo">
+                    </a>
+                </div>
             </section>
         </div>
 
@@ -287,18 +260,15 @@
                 
                     <div class="services-slider slider-delivery services-slider-active">
                         <h3 class="services-slider-title">Доставка</h3>
-                        <p class="services-slider-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-                        <p class="services-slider-desc">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                        <p class="services-slider-desc">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
                     </div>
                     <div class="services-slider slider-guarantee">
                         <h3 class="services-slider-title">Гарантия</h3>
-                        <p class="services-slider-desc">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-                        <p class="services-slider-desc">Дом уж восстановите как-нибудь сами.</p>
+                        <p class="services-slider-desc">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
                     </div>
                     <div class="services-slider slider-credit">
                     <h3 class="services-slider-title">Кредит</h3>
-                    <p class="services-slider-desc">Залезть в долговую яму стало проще!</p>
-                    <p class="services-slider-desc">Кредитные консультанты придут вам на помощь!</p>
+                    <p class="services-slider-desc">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь!</p>
                     <a class="slider-link button" href="#">отправить заявку</a>
                 </div>
                 </div>
@@ -317,15 +287,12 @@
                 </p>
                 <ul class="about-partners-list">
                     <li class="about-partners-item">
-                        <span class="red-line"></span>
                         Деловые линии
                     </li>
                     <li class="about-partners-item">
-                        <span class="red-line"></span>
                         Автотрейдинг
                     </li>
                     <li class="about-partners-item">
-                        <span class="red-line"></span>
                         ЖелДорЭкспедиция
                     </li>
                 </ul>
@@ -335,12 +302,10 @@
         <section class="contacts">
             <h2 class="contacts-title">Контакты</h2>
             <p class="contacts-desc">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <figure class="contacts-map">
-                <a class="button-map" href="#">
-                   <img src="img/map_mini.jpg" width="300" height="158" alt="map">
-                </a>
-            </figure>
-            <a class="contacts-link button" href="#">Заблудились? Напишите нам!</a>
+            <a class="button-map" href="map.html">
+                <img src="img/map_mini.jpg" width="300" height="158" alt="map">
+            </a>
+            <a class="contacts-link button" href="contacts.html">Заблудились? Напишите нам!</a>
         </section>
     </div>
 </main>
@@ -372,7 +337,7 @@
             </div>
             <div class="footer-wrapper-middle">
                 <address class="footer-contact">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7&nbsp;(812)&nbsp;555-05-55
                 </address>
                 <ul class="footer-offers">
@@ -398,18 +363,18 @@
             <p class="footer-copyright">&copy; 2010-2019 Компания&nbsp;&#171;Техномарт&#187; Все права защищены.</p>
 
             <ul class="social-list">
-                <li class="social-list-item vkontakte">
-                    <a class="social-link" href="#">
+                <li class="social-list-item">
+                    <a class="social-link vkontakte" href="#">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </li>
-                <li class="social-list-item facebook">
-                    <a class="social-link" href="#">
+                <li class="social-list-item">
+                    <a class="social-link facebook" href="#">
                         <span class="visually-hidden">Фейсбук</span>
                     </a>
                 </li>
-                <li class="social-list-item instagram">
-                    <a class="social-link" href="#">
+                <li class="social-list-item">
+                    <a class="social-link instagram" href="#">
                         <span class="visually-hidden">Инстаграм</span>
                     </a>
                 </li>
@@ -421,7 +386,7 @@
             </p>
 
             <p class="footer-developer">
-                Разработано -
+                <span>Разработано</span>
                 <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </div>
@@ -455,7 +420,7 @@
     <button class="modal-close" type="button">Закрыть форму</button>
 </section>
 
-<script src="js/script-index.js"></script>
+<script src="js/script-index.min.js"></script>
 
 </body>
 

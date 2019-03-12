@@ -84,11 +84,11 @@ window.addEventListener("keydown", function (evt){
 });
     
 
-var sliderBtnsRight = document.querySelectorAll(".slider-right");
+var sliderBtnRight = document.querySelector(".slider-right");
 var slider = document.querySelectorAll(".slider-item");
-    
-for(var j = 0; j < sliderBtnsRight.length; j++){
-    sliderBtnsRight[j].addEventListener("click", function (evt){
+var bullet = document.querySelectorAll(".bullet-item");
+
+    sliderBtnRight.addEventListener("click", function (evt){
         for(var i = 0; i < slider.length; i++){
             if (slider[i].classList.contains("slider-active")){
                 slider[i].classList.remove("slider-active");
@@ -99,13 +99,21 @@ for(var j = 0; j < sliderBtnsRight.length; j++){
                 } break;
             }
         }
+        for(var i = 0; i < bullet.length; i++){
+            if (bullet[i].classList.contains("activ-bullet")){
+                bullet[i].classList.remove("activ-bullet");
+                if (i < bullet.length - 1){
+                    bullet[i + 1].classList.add("activ-bullet");
+                } else{
+                    bullet[0].classList.add("activ-bullet");
+                } break;
+            }
+        }
     })
-}
     
-var sliderBtnsLeft = document.querySelectorAll(".slider-left");
+var sliderBtnLeft = document.querySelector(".slider-left");
     
-for(var j = 0; j < sliderBtnsLeft.length; j++){
-    sliderBtnsLeft[j].addEventListener("click", function (evt){
+    sliderBtnLeft.addEventListener("click", function (evt){
         for(var i = 0; i < slider.length; i++){
             if (slider[i].classList.contains("slider-active")){
                 slider[i].classList.remove("slider-active");
@@ -116,8 +124,17 @@ for(var j = 0; j < sliderBtnsLeft.length; j++){
                 } break;
             }
         }
+        for(var i = 0; i < bullet.length; i++){
+            if (bullet[i].classList.contains("activ-bullet")){
+                bullet[i].classList.remove("activ-bullet");
+                if (i < bullet.length - 1){
+                    bullet[i + 1].classList.add("activ-bullet");
+                } else{
+                    bullet[0].classList.add("activ-bullet");
+                } break;
+            }
+        }
     })
-    }
     
 var guaranteeButton = document.querySelector(".button-guarantee");
 var deliveryButton = document.querySelector(".button-delivery");

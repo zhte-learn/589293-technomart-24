@@ -2,6 +2,7 @@ var cartLinks = document.querySelectorAll(".buy");
     
 var cartPopup = document.querySelector(".modal-cart");
 var cartClose = cartPopup.querySelector(".modal-close");
+var continueShop = cartPopup.querySelector(".modal-cart-continue"); 
     
 for(var j = 0; j < cartLinks.length; j++){
     cartLinks[j].addEventListener("click", function (evt){    
@@ -11,6 +12,11 @@ for(var j = 0; j < cartLinks.length; j++){
 }
 
 cartClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.remove("modal-show");
+});
+
+continueShop.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.remove("modal-show");
 });
