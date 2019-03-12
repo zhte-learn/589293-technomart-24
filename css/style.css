@@ -1772,6 +1772,7 @@ img{
 .catalog-sorter button{
     width: 10px;
     height: 10px;
+    
     padding: 0;
     background-color: transparent;
     border: none;
@@ -1779,11 +1780,16 @@ img{
 }
 
 .sort-up{
+    position: relative;
     margin-left: 46px;
     margin-right: 22px;
 }
 
 .triangle-up{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
@@ -1791,7 +1797,15 @@ img{
     border-bottom: 10px solid #c5c5c5;
 }
 
+.sort-down{
+    position: relative;
+}
+
 .triangle-down{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 0;
 	height: 0;
     border: none;
